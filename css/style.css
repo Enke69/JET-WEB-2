@@ -208,10 +208,28 @@ p {
 
 .top-bar .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 24px;
   flex-wrap: wrap;
+}
+
+.top-bar-social {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.top-bar-social a {
+  color: var(--white);
+  opacity: 0.95;
+  display: inline-flex;
+  align-items: center;
+  transition: opacity var(--transition);
+}
+
+.top-bar-social a:hover {
+  opacity: 1;
 }
 
 .top-bar-content {
