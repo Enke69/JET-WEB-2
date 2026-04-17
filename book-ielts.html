@@ -341,7 +341,20 @@
         today.setHours(0, 0, 0, 0);
         document.querySelectorAll('.cal-cells [data-date]').forEach(function(el) {
             var d = new Date(el.dataset.date);
-            if (d < today) {
+            d.setHours(0, 0, 0, 0);
+            var day = d.getDay(); // 0=Sun, 5=Fri, 6=Sat
+            var shouldDim = false;
+            if (day === 5 || day === 6 || day === 0) {
+                // Dim Fri/Sat/Sun when their Thursday (same week) arrives
+                var daysBack = day === 5 ? 1 : day === 6 ? 2 : 3;
+                var thursday = new Date(d);
+                thursday.setDate(d.getDate() - daysBack);
+                thursday.setHours(0, 0, 0, 0);
+                shouldDim = thursday <= today;
+            } else {
+                shouldDim = d < today;
+            }
+            if (shouldDim) {
                 el.classList.remove('cal-highlight');
                 el.classList.add('cal-passed');
             }
