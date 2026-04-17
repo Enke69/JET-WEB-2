@@ -2038,6 +2038,111 @@ p {
 }
 
 /* ============================================
+   TEST DATES CALENDAR
+   ============================================ */
+.calendar-months {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cal-month {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: var(--radius-md);
+  padding: 20px 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.cal-month-title {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--black);
+  margin-bottom: 12px;
+}
+
+.cal-week-headers {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 4px;
+}
+
+.cal-week-headers span {
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--gray-500);
+  padding: 4px 0;
+}
+
+.cal-cells {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 3px;
+}
+
+.cal-cells span {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 7px 2px;
+  border-radius: 6px;
+  color: var(--black);
+  line-height: 1;
+}
+
+.cal-other {
+  color: var(--gray-300) !important;
+}
+
+.cal-highlight {
+  background: var(--red);
+  color: var(--white) !important;
+  font-weight: 600;
+}
+
+.cal-passed {
+  background: none !important;
+  color: var(--gray-300) !important;
+  font-weight: 400;
+  text-decoration: line-through;
+}
+
+.cal-legend {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.cal-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.cal-legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.cal-legend-dot.highlight { background: var(--red); }
+.cal-legend-dot.passed { background: var(--gray-300); }
+
+@media (max-width: 900px) {
+  .calendar-months {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+}
+
+/* ============================================
    KEYFRAME ANIMATIONS
    ============================================ */
 @keyframes float {
