@@ -2133,6 +2133,13 @@ p {
 
 .cal-legend-dot.highlight { background: var(--red); }
 .cal-legend-dot.passed { background: var(--gray-300); }
+.cal-legend-dot.today { background: #2563EB; }
+
+.cal-today {
+  background: #2563EB !important;
+  color: var(--white) !important;
+  font-weight: 700;
+}
 
 @media (max-width: 900px) {
   .calendar-months {

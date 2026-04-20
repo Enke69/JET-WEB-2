@@ -143,6 +143,10 @@
                         <span>Test Day (Fri / Sat / Sun)</span>
                     </div>
                     <div class="cal-legend-item">
+                        <span class="cal-legend-dot today"></span>
+                        <span>Today</span>
+                    </div>
+                    <div class="cal-legend-item">
                         <span class="cal-legend-dot passed"></span>
                         <span>Date Passed</span>
                     </div>
@@ -339,13 +343,13 @@
     (function() {
         var today = new Date();
         today.setHours(0, 0, 0, 0);
+
         document.querySelectorAll('.cal-cells [data-date]').forEach(function(el) {
             var d = new Date(el.dataset.date);
             d.setHours(0, 0, 0, 0);
-            var day = d.getDay(); // 0=Sun, 5=Fri, 6=Sat
+            var day = d.getDay();
             var shouldDim = false;
             if (day === 5 || day === 6 || day === 0) {
-                // Dim Fri/Sat/Sun when their Thursday (same week) arrives
                 var daysBack = day === 5 ? 1 : day === 6 ? 2 : 3;
                 var thursday = new Date(d);
                 thursday.setDate(d.getDate() - daysBack);
@@ -359,6 +363,17 @@
                 el.classList.add('cal-passed');
             }
         });
+
+        // Highlight today in blue (overrides all other states)
+        var t = today;
+        var todayStr = t.getFullYear() + '-' +
+            String(t.getMonth() + 1).padStart(2, '0') + '-' +
+            String(t.getDate()).padStart(2, '0');
+        var todayEl = document.querySelector('.cal-cells [data-date="' + todayStr + '"]');
+        if (todayEl) {
+            todayEl.classList.remove('cal-highlight', 'cal-passed');
+            todayEl.classList.add('cal-today');
+        }
     })();
     </script>
     <script>
