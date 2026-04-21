@@ -2038,6 +2038,29 @@ p {
 }
 
 /* ============================================
+   BRITISH COUNCIL LOGO
+   ============================================ */
+.hero-bc-logo {
+  margin-top: 28px;
+}
+
+.hero-bc-logo img {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+}
+
+.page-hero-bc-logo {
+  margin-top: 20px;
+}
+
+.page-hero-bc-logo img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ============================================
    TEST DATES CALENDAR
    ============================================ */
 .calendar-months {
