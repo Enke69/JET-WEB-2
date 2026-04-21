@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* --- Language Switcher --- */
   const langBtn = document.getElementById('lang-toggle');
-  let currentLang = 'en';
+  let currentLang = localStorage.getItem('jet-lang') || 'en';
 
   function applyLang(lang) {
     if (!window.i18n || !window.i18n[lang]) return;
@@ -32,9 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (langBtn) {
     langBtn.addEventListener('click', () => {
       currentLang = currentLang === 'en' ? 'mn' : 'en';
+      localStorage.setItem('jet-lang', currentLang);
       applyLang(currentLang);
     });
   }
+
+  // Apply saved language on page load
+  if (currentLang !== 'en') applyLang(currentLang);
 
   /* --- Navbar Scroll Effect --- */
   const navbar = document.querySelector('.navbar');
