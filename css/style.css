@@ -1709,6 +1709,18 @@ p {
   margin-bottom: 16px;
 }
 
+.cta-banner .btn-primary {
+  background: var(--red-dark);
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.cta-banner .btn-primary:hover {
+  background: var(--white);
+  color: var(--red);
+  border-color: var(--white);
+}
+
 .cta-banner p {
   color: var(--white);
   margin-bottom: 32px;
