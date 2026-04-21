@@ -1950,23 +1950,18 @@ p {
   }
 
   .float-card-bc {
-    right: 12%;
-    top: 2%;
+    right: 8%;
+    top: 76%;
   }
 
   .float-card-1 {
     right: 2%;
-    top: 26%;
+    top: 12%;
   }
 
   .float-card-2 {
     right: 0%;
-    top: 54%;
-  }
-
-  .float-card-3 {
-    right: 8%;
-    top: 80%;
+    top: 46%;
   }
 }
 
@@ -2000,19 +1995,19 @@ p {
   }
 
   .float-card-bc {
-    right: 16%;
-    top: 2%;
+    right: 8%;
+    top: 76%;
   }
 
   .float-card-1 {
     right: 5%;
-    top: 24%;
+    top: 10%;
     padding: 24px 28px;
   }
 
   .float-card-2 {
     right: 1%;
-    top: 52%;
+    top: 44%;
     padding: 24px 28px;
   }
 
