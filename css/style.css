@@ -264,6 +264,25 @@ p {
   opacity: 1;
 }
 
+.lang-toggle {
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.55);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 0.06em;
+  font-family: var(--font-heading);
+  transition: background var(--transition);
+  line-height: 1.4;
+}
+
+.lang-toggle:hover {
+  background: rgba(255,255,255,0.32);
+}
+
 .top-bar-divider {
   width: 1px;
   height: 14px;

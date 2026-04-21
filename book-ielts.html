@@ -31,6 +31,7 @@
                 <span>✉️ ielts@jet-english.mn</span>
                 <span>🕐 8:40 AM – 5:40 PM Mon–Fri</span>
             </div>
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">MN</button>
             <div class="top-bar-social">
                 <a href="https://www.facebook.com/Jettestcenter" target="_blank" rel="noopener" aria-label="Facebook">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -52,13 +53,13 @@
                         JET Institute
                     </a>
                     <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html" data-i18n="nav_home">Home</a></li>
                         <li><a href="book-ielts.html" class="active">Book IELTS</a></li>
-                        <li><a href="about-test.html">About the Test</a></li>
-                        <li><a href="preparation.html">Preparation</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about-test.html" data-i18n="nav_test">About the Test</a></li>
+                        <li><a href="preparation.html" data-i18n="nav_prep">Preparation</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
                     </ul>
-                    <a href="book-ielts.html" class="btn btn-primary nav-cta">Register Now</a>
+                    <a href="book-ielts.html" class="btn btn-primary nav-cta" data-i18n="nav_register"data-i18n="book_cta_btn">Register Now</a>
                     <button class="nav-hamburger" aria-label="Toggle navigation menu">
                         <span></span>
                         <span></span>
@@ -71,13 +72,13 @@
         <!-- Mobile Nav Overlay -->
         <div class="mobile-nav">
             <ul class="mobile-nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
                 <li><a href="book-ielts.html" class="active">Book IELTS</a></li>
-                <li><a href="about-test.html">About the Test</a></li>
-                <li><a href="preparation.html">Preparation</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="about-test.html" data-i18n="nav_test">About the Test</a></li>
+                <li><a href="preparation.html" data-i18n="nav_prep">Preparation</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
             </ul>
-            <a href="book-ielts.html" class="btn btn-primary mobile-nav-cta">Register Now</a>
+            <a href="book-ielts.html" class="btn btn-primary mobile-nav-cta" data-i18n="nav_register"data-i18n="book_cta_btn">Register Now</a>
         </div>
     </header>
 
@@ -87,12 +88,12 @@
         <section class="page-hero">
             <div class="container">
                 <nav class="breadcrumb" aria-label="Breadcrumb">
-                    <a href="index.html">Home</a>
+                    <a href="index.html" data-i18n="nav_home">Home</a>
                     <span>→</span>
                     <span>Book IELTS</span>
                 </nav>
-                <h1>Book Your IELTS Test</h1>
-                <p>Register for computer-delivered IELTS at Mongolia's official British Council test centre.</p>
+                <h1 data-i18n="book_hero_h1">Book Your IELTS Test</h1>
+                <p data-i18n="book_hero_p">Register for computer-delivered IELTS at Mongolia's official British Council test centre.</p>
             </div>
         </section>
 
@@ -100,29 +101,29 @@
         <section class="content-section">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">How to Book</span>
-                    <h2>Booking Process</h2>
+                    <span class="section-badge" data-i18n="book_steps_badge">How to Book</span>
+                    <h2 data-i18n="book_steps_h2">Booking Process</h2>
                     <div class="accent-line"></div>
                 </div>
                 <div class="steps reveal">
                     <div class="step-card" style="transition-delay: 0.1s">
                         <div class="step-number">1</div>
-                        <h3>Register Online</h3>
+                        <h3 data-i18n="book_s1_h3">Register Online</h3>
                         <p>Visit <a href="https://ieltsregistration.britishcouncil.org/?organisation=JET" target="_blank" rel="noopener">ieltsregistration.britishcouncil.org</a> and create your account. Select your preferred test date and type (Academic or General Training).</p>
                     </div>
                     <div class="step-card" style="transition-delay: 0.2s">
                         <div class="step-number">2</div>
-                        <h3>Make Payment</h3>
+                        <h3 data-i18n="book_s2_h3">Make Payment</h3>
                         <p>Transfer 899,000 MNT to Jettrack/ЖЭТТРАКК ХХК — TDB Account: 499 232 558 or Khaan Bank: 503 127 2734</p>
                     </div>
                     <div class="step-card" style="transition-delay: 0.3s">
                         <div class="step-number">3</div>
-                        <h3>Send Confirmation</h3>
+                        <h3 data-i18n="book_s3_h3">Send Confirmation</h3>
                         <p>Email your payment proof and registration reference number to ielts@jet-english.mn within 24 hours.</p>
                     </div>
                     <div class="step-card" style="transition-delay: 0.4s">
                         <div class="step-number">4</div>
-                        <h3>Receive Confirmation</h3>
+                        <h3 data-i18n="book_s4_h3">Receive Confirmation</h3>
                         <p>You will receive a confirmation email with your test date, time, and venue details.</p>
                     </div>
                 </div>
@@ -133,22 +134,22 @@
         <section class="content-section">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">Test Dates</span>
-                    <h2>Available Test Dates</h2>
+                    <span class="section-badge" data-i18n="book_dates_badge">Test Dates</span>
+                    <h2 data-i18n="book_dates_h2">Available Test Dates</h2>
                     <div class="accent-line"></div>
                 </div>
                 <div class="cal-legend reveal">
                     <div class="cal-legend-item">
                         <span class="cal-legend-dot highlight"></span>
-                        <span>Test Day (Fri / Sat / Sun)</span>
+                        <span data-i18n="book_legend_testday">Test Day (Fri / Sat / Sun)</span>
                     </div>
                     <div class="cal-legend-item">
                         <span class="cal-legend-dot today"></span>
-                        <span>Today</span>
+                        <span data-i18n="book_legend_today">Today</span>
                     </div>
                     <div class="cal-legend-item">
                         <span class="cal-legend-dot passed"></span>
-                        <span>Date Passed</span>
+                        <span data-i18n="book_legend_passed">Date Passed</span>
                     </div>
                 </div>
                 <div class="calendar-months reveal">
@@ -206,37 +207,37 @@
         <section class="content-section">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">Fees</span>
-                    <h2>IELTS Test Fees</h2>
+                    <span class="section-badge" data-i18n="book_fees_badge">Fees</span>
+                    <h2 data-i18n="book_fees_h2">IELTS Test Fees</h2>
                     <div class="accent-line"></div>
                 </div>
                 <div class="reveal">
                     <table class="price-table">
                         <thead>
                             <tr>
-                                <th>Service</th>
-                                <th>Fee (MNT)</th>
+                                <th data-i18n="book_fee_th_service">Service</th>
+                                <th data-i18n="book_fee_th_fee">Fee (MNT)</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>IELTS Test Fee</td>
+                                <td data-i18n="book_fee_test">IELTS Test Fee</td>
                                 <td>899,000</td>
                             </tr>
                             <tr>
-                                <td>Re-marking (Enquiry on Results)</td>
+                                <td data-i18n="book_fee_remark">Re-marking (Enquiry on Results)</td>
                                 <td>472,000</td>
                             </tr>
                             <tr>
-                                <td>Cancellation Fee</td>
+                                <td data-i18n="book_fee_cancel">Cancellation Fee</td>
                                 <td>230,000</td>
                             </tr>
                             <tr>
-                                <td>Transfer Fee</td>
+                                <td data-i18n="book_fee_transfer">Transfer Fee</td>
                                 <td>230,000</td>
                             </tr>
                             <tr>
-                                <td>Extra TRF (Test Report Form)</td>
+                                <td data-i18n="book_fee_trf">Extra TRF (Test Report Form)</td>
                                 <td>40,000</td>
                             </tr>
                         </tbody>
@@ -252,25 +253,25 @@
         <section class="content-section">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">Important</span>
-                    <h2>Before You Book</h2>
+                    <span class="section-badge" data-i18n="book_info_badge">Important</span>
+                    <h2 data-i18n="book_info_h2">Before You Book</h2>
                     <div class="accent-line"></div>
                 </div>
                 <div class="content-grid reveal">
                     <div class="content-card" style="transition-delay: 0.1s">
-                        <h3>Required Documents</h3>
+                        <h3 data-i18n="book_req_h3">Required Documents</h3>
                         <p>Valid passport or national ID (original required on test day), recent passport-sized photo, registration confirmation email</p>
                     </div>
                     <div class="content-card" style="transition-delay: 0.2s">
-                        <h3>Test Formats</h3>
+                        <h3 data-i18n="book_fmt_h3">Test Formats</h3>
                         <p>Computer-delivered IELTS: Listening, Reading, and Writing are completed on a computer. Speaking is face-to-face with an examiner.</p>
                     </div>
                     <div class="content-card" style="transition-delay: 0.3s">
-                        <h3>Results</h3>
+                        <h3 data-i18n="book_res_h3">Results</h3>
                         <p>Results are available 1-5 days after your test for computer-delivered IELTS. You can view them online through your British Council account.</p>
                     </div>
                     <div class="content-card" style="transition-delay: 0.4s">
-                        <h3>Cancellation Policy</h3>
+                        <h3 data-i18n="book_cancel_h3">Cancellation Policy</h3>
                         <p>You can cancel or transfer your test up to the deadline shown in your confirmation email. Cancellation fee: 230,000 MNT.</p>
                     </div>
                 </div>
@@ -280,10 +281,10 @@
         <!-- CTA Banner -->
         <section class="cta-banner">
             <div class="container">
-                <h2>Ready to Book?</h2>
+                <h2 data-i18n="book_cta_h2">Ready to Book?</h2>
                 <p>Register now and take the first step towards your goals.</p>
                 <div class="cta-buttons">
-                    <a href="https://ieltsregistration.britishcouncil.org/?organisation=JET" class="btn btn-primary" target="_blank" rel="noopener">Register Now</a>
+                    <a href="https://ieltsregistration.britishcouncil.org/?organisation=JET" class="btn btn-primary" target="_blank" rel="noopener"data-i18n="book_cta_btn">Register Now</a>
                 </div>
             </div>
         </section>
@@ -299,27 +300,27 @@
                         <img src="images/Newlogo.png" alt="JET Institute logo" class="logo-img">
                         JET Institute
                     </a>
-                    <p>Mongolia's official IELTS test centre. Trusted since 1995.</p>
+                    <pdata-i18n="footer_tagline">Mongolia's official IELTS test centre. Trusted since 1995.</p>
                 </div>
                 <div class="footer-column">
-                    <h4>Resources</h4>
+                    <h4 data-i18n="footer_resources">Resources</h4>
                     <ul>
-                        <li><a href="book-ielts.html">Book IELTS</a></li>
-                        <li><a href="about-test.html">About the Test</a></li>
-                        <li><a href="preparation.html">Preparation</a></li>
-                        <li><a href="https://ielts.org/legal/complaints-procedure" target="_blank" rel="noopener">Complaints</a></li>
+                        <li><a href="book-ielts.html" data-i18n="nav_book">Book IELTS</a></li>
+                        <li><a href="about-test.html" data-i18n="nav_test">About the Test</a></li>
+                        <li><a href="preparation.html" data-i18n="nav_prep">Preparation</a></li>
+                        <li><a href="https://ielts.org/legal/complaints-procedure" target="_blank" rel="noopener"data-i18n="footer_link_complaints">Complaints</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Company</h4>
+                    <h4 data-i18n="footer_company">Company</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="about.html#contact">Contact</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                        <li><a href="about.html#contact" data-i18n="footer_link_contact">Contact</a></li>
                         <li><a href="index.html#faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer_contact_col">Contact</h4>
                     <ul>
                         <li>📞 (+976) 7711-8899 (2)</li>
                         <li>✉️ ielts@jet-english.mn</li>
@@ -328,7 +329,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 JET Institute. All rights reserved.</p>
+                <pdata-i18n="footer_copyright">&copy; 2026 JET Institute. All rights reserved.</p>
             </div>
         </div>
     </footer>

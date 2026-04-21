@@ -4,6 +4,38 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* --- Language Switcher --- */
+  const langBtn = document.getElementById('lang-toggle');
+  let currentLang = 'en';
+
+  function applyLang(lang) {
+    if (!window.i18n || !window.i18n[lang]) return;
+    const t = window.i18n[lang];
+
+    // textContent nodes
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const v = t[el.dataset.i18n];
+      if (v !== undefined) el.textContent = v;
+    });
+
+    // innerHTML nodes (FAQ answers, etc.)
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const v = t[el.dataset.i18nHtml];
+      if (v !== undefined) el.innerHTML = v;
+    });
+
+    // Update toggle label
+    if (langBtn) langBtn.textContent = lang === 'en' ? 'MN' : 'EN';
+    document.documentElement.lang = lang === 'en' ? 'en' : 'mn';
+  }
+
+  if (langBtn) {
+    langBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'mn' : 'en';
+      applyLang(currentLang);
+    });
+  }
+
   /* --- Navbar Scroll Effect --- */
   const navbar = document.querySelector('.navbar');
   if (navbar) {

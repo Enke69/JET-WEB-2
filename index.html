@@ -31,6 +31,7 @@
                 <span>✉️ ielts@jet-english.mn</span>
                 <span>🕐 8:40 AM – 5:40 PM Mon–Fri</span>
             </div>
+            <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">MN</button>
             <div class="top-bar-social">
                 <a href="https://www.facebook.com/Jettestcenter" target="_blank" rel="noopener" aria-label="Facebook">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
@@ -53,12 +54,12 @@
                     </a>
                     <ul class="nav-links">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="book-ielts.html">Book IELTS</a></li>
-                        <li><a href="about-test.html">About the Test</a></li>
-                        <li><a href="preparation.html">Preparation</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="book-ielts.html" data-i18n="nav_book">Book IELTS</a></li>
+                        <li><a href="about-test.html" data-i18n="nav_test">About the Test</a></li>
+                        <li><a href="preparation.html" data-i18n="nav_prep">Preparation</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
                     </ul>
-                    <a href="book-ielts.html" class="btn btn-primary nav-cta">Register Now</a>
+                    <a href="book-ielts.html" class="btn btn-primary nav-cta" data-i18n="nav_register">Register Now</a>
                     <button class="nav-hamburger" aria-label="Toggle navigation menu">
                         <span></span>
                         <span></span>
@@ -72,12 +73,12 @@
         <div class="mobile-nav">
             <ul class="mobile-nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="book-ielts.html">Book IELTS</a></li>
-                <li><a href="about-test.html">About the Test</a></li>
-                <li><a href="preparation.html">Preparation</a></li>
-                <li><a href="about.html">About Us</a></li>
+                <li><a href="book-ielts.html" data-i18n="nav_book">Book IELTS</a></li>
+                <li><a href="about-test.html" data-i18n="nav_test">About the Test</a></li>
+                <li><a href="preparation.html" data-i18n="nav_prep">Preparation</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
             </ul>
-            <a href="book-ielts.html" class="btn btn-primary mobile-nav-cta">Register Now</a>
+            <a href="book-ielts.html" class="btn btn-primary mobile-nav-cta" data-i18n="nav_register">Register Now</a>
         </div>
     </header>
 
@@ -91,26 +92,26 @@
                     <div class="hero-bc-logo hero-bc-mobile">
                         <img src="images/BC LOGO.png" alt="British Council IELTS Test Centre — Official Logo">
                     </div>
-                    <span class="hero-badge">🏆 Official IELTS Centre</span>
+                    <span class="hero-badge" data-i18n="hero_badge">🏆 Official IELTS Centre</span>
                     <h1>The First <span class="text-red">Computer-Delivered</span> IELTS Test Center in Mongolia</h1>
-                    <p class="hero-description">Mongolia's leading English language school since 1995. Over 10,000 candidates tested since 2019 with the British Council.</p>
+                    <p class="hero-description" data-i18n="hero_desc">Mongolia's leading English language school since 1995. Over 10,000 candidates tested since 2019 with the British Council.</p>
                     <div class="hero-buttons">
-                        <a href="book-ielts.html" class="btn btn-primary btn-lg btn-mobile-full">Book IELTS Now</a>
-                        <a href="about-test.html" class="btn btn-outline btn-lg btn-mobile-full">Learn About IELTS</a>
+                        <a href="book-ielts.html" class="btn btn-primary btn-lg btn-mobile-full" data-i18n="hero_btn_book">Book IELTS Now</a>
+                        <a href="about-test.html" class="btn btn-outline btn-lg btn-mobile-full" data-i18n="hero_btn_learn">Learn About IELTS</a>
                     </div>
                     <!-- Mobile stats row -->
                     <div class="hero-stats-mobile">
                         <div class="hero-stat-pill">
                             <span class="hero-stat-pill-num" data-counter="10000" data-suffix="+">0</span>
-                            <span class="hero-stat-pill-label">Candidates</span>
+                            <span class="hero-stat-pill-label" data-i18n="hero_pill_candidates">Candidates</span>
                         </div>
                         <div class="hero-stat-pill">
                             <span class="hero-stat-pill-num" data-counter="7" data-suffix="">0</span>
-                            <span class="hero-stat-pill-label">Years</span>
+                            <span class="hero-stat-pill-label" data-i18n="hero_pill_years">Years</span>
                         </div>
                         <div class="hero-stat-pill">
                             <span class="hero-stat-pill-num">✓</span>
-                            <span class="hero-stat-pill-label">British Council</span>
+                            <span class="hero-stat-pill-label" data-i18n="hero_pill_bc">British Council</span>
                         </div>
                     </div>
                 </div>
@@ -121,11 +122,11 @@
                     </div>
                     <div class="hero-float-card float-card-1">
                         <span class="hero-float-stat" data-counter="10000" data-suffix="+">0</span>
-                        <span class="hero-float-label">Candidates Tested</span>
+                        <span class="hero-float-label" data-i18n="hero_float_candidates">Candidates Tested</span>
                     </div>
                     <div class="hero-float-card float-card-2">
                         <span class="hero-float-stat" data-counter="7" data-suffix="">0</span>
-                        <span class="hero-float-label">Years of Experience</span>
+                        <span class="hero-float-label" data-i18n="hero_float_years">Years of Experience</span>
                     </div>
                 </div>
             </div>
@@ -135,34 +136,34 @@
         <section class="services">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">What We Offer</span>
-                    <h2>Our Services</h2>
+                    <span class="section-badge" data-i18n="services_badge">What We Offer</span>
+                    <h2 data-i18n="services_h2">Our Services</h2>
                     <div class="accent-line"></div>
                 </div>
                 <div class="services-grid reveal">
                     <a href="book-ielts.html" class="service-card" style="transition-delay: 0.1s">
                         <div class="service-icon">📝</div>
-                        <h3>Book IELTS</h3>
-                        <p>Register for your IELTS exam</p>
-                        <span class="service-link">Learn More →</span>
+                        <h3 data-i18n="svc_book_h3">Book IELTS</h3>
+                        <p data-i18n="svc_book_p">Register for your IELTS exam</p>
+                        <span class="service-link" data-i18n="svc_learn_more">Learn More →</span>
                     </a>
                     <a href="about-test.html" class="service-card" style="transition-delay: 0.2s">
                         <div class="service-icon">📖</div>
-                        <h3>About the Test</h3>
-                        <p>Learn about IELTS format and scoring</p>
-                        <span class="service-link">Learn More →</span>
+                        <h3 data-i18n="svc_test_h3">About the Test</h3>
+                        <p data-i18n="svc_test_p">Learn about IELTS format and scoring</p>
+                        <span class="service-link" data-i18n="svc_learn_more">Learn More →</span>
                     </a>
                     <a href="preparation.html" class="service-card" style="transition-delay: 0.3s">
                         <div class="service-icon">🎓</div>
-                        <h3>IELTS Preparation</h3>
-                        <p>Courses to boost your score</p>
-                        <span class="service-link">Learn More →</span>
+                        <h3 data-i18n="svc_prep_h3">IELTS Preparation</h3>
+                        <p data-i18n="svc_prep_p">Courses to boost your score</p>
+                        <span class="service-link" data-i18n="svc_learn_more">Learn More →</span>
                     </a>
                     <a href="about.html" class="service-card" style="transition-delay: 0.4s">
                         <div class="service-icon">🏫</div>
-                        <h3>About Us</h3>
-                        <p>Learn about JET Institute</p>
-                        <span class="service-link">Learn More →</span>
+                        <h3 data-i18n="svc_about_h3">About Us</h3>
+                        <p data-i18n="svc_about_p">Learn about JET Institute</p>
+                        <span class="service-link" data-i18n="svc_learn_more">Learn More →</span>
                     </a>
                 </div>
             </div>
@@ -172,25 +173,25 @@
         <section class="why-ielts">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">Why Choose IELTS</span>
-                    <h2>Accepted Worldwide</h2>
+                    <span class="section-badge" data-i18n="why_badge">Why Choose IELTS</span>
+                    <h2 data-i18n="why_h2">Accepted Worldwide</h2>
                     <div class="accent-line"></div>
-                    <p>Trusted by 11,000+ organisations in 140+ countries</p>
+                    <p data-i18n="why_sub">Trusted by 11,000+ organisations in 140+ countries</p>
                 </div>
                 <div class="why-grid reveal">
                     <div class="why-card" style="transition-delay: 0.1s">
                         <div class="why-icon">🌍</div>
-                        <h3>Study Abroad</h3>
+                        <h3 data-i18n="why_study_h3">Study Abroad</h3>
                         <p>Open doors to universities worldwide with IELTS scores accepted across the globe.</p>
                     </div>
                     <div class="why-card" style="transition-delay: 0.2s">
                         <div class="why-icon">✈️</div>
-                        <h3>Global Migration</h3>
+                        <h3 data-i18n="why_migration_h3">Global Migration</h3>
                         <p>IELTS is the trusted test for immigration to Australia, Canada, New Zealand, and the UK.</p>
                     </div>
                     <div class="why-card" style="transition-delay: 0.3s">
                         <div class="why-icon">💼</div>
-                        <h3>Career Growth</h3>
+                        <h3 data-i18n="why_career_h3">Career Growth</h3>
                         <p>Boost your career prospects with internationally recognised English proficiency.</p>
                     </div>
                 </div>
@@ -201,29 +202,29 @@
         <section class="faq">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">Common Questions</span>
-                    <h2>Frequently Asked Questions</h2>
+                    <span class="section-badge" data-i18n="faq_badge">Common Questions</span>
+                    <h2 data-i18n="faq_h2">Frequently Asked Questions</h2>
                     <div class="accent-line"></div>
                 </div>
                 <div class="faq-list reveal">
                     <div class="faq-item">
                         <button class="faq-question">
-                            How do I book my IELTS test?
+                            <span data-i18n="faq_q1">How do I book my IELTS test?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-inner">
+                            <div class="faq-answer-inner" data-i18n-html="faq_a1">
                                 <p>Register at <a href="https://ieltsregistration.britishcouncil.org/?organisation=JET" target="_blank" rel="noopener">ieltsregistration.britishcouncil.org</a>, then transfer 899,000 MNT to: <strong>Jettrack/ЖЭТТРАКК ХХК</strong> — TDB Account: 499 232 558 or Khaan Bank: 503 127 2734. Send payment proof + reference number to ielts@jet-english.mn within 24 hours.</p>
                             </div>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">
-                            What are the IELTS fees?
+                            <span data-i18n="faq_q2">What are the IELTS fees?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-inner">
+                            <div class="faq-answer-inner" data-i18n-html="faq_a2">
                                 <ul>
                                     <li>Test Fee: 899,000 MNT</li>
                                     <li>Re-marking: 472,000 MNT</li>
@@ -236,22 +237,22 @@
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">
-                            What happens on test day?
+                            <span data-i18n="faq_q3">What happens on test day?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-inner">
+                            <div class="faq-answer-inner" data-i18n-html="faq_a3">
                                 <p>The test has four sections: Listening (30 min), Reading (1 hour), Writing (1 hour), and Speaking (15 min). Arrive at least 30 minutes before your scheduled time.</p>
                             </div>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question">
-                            How can I contact JET Institute?
+                            <span data-i18n="faq_q4">How can I contact JET Institute?</span>
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <div class="faq-answer-inner">
+                            <div class="faq-answer-inner" data-i18n-html="faq_a4">
                                 <p>Phone: (+976) 7711-8899 (2) (2) | Email: ielts@jet-english.mn | Hours: 8:40 AM – 5:40 PM Mon–Fri | Address: Max Centre 5th Floor, Sukhbaatar District, 8th Khoroo, Ulaanbaatar-211238</p>
                             </div>
                         </div>
@@ -264,8 +265,8 @@
         <section class="testimonials">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">Student Success</span>
-                    <h2>What Our Students Say</h2>
+                    <span class="section-badge" data-i18n="test_badge">Student Success</span>
+                    <h2 data-i18n="test_h2">What Our Students Say</h2>
                     <div class="accent-line"></div>
                 </div>
                 <div class="testimonial-track reveal">
@@ -343,8 +344,8 @@
         <section class="location">
             <div class="container">
                 <div class="section-header reveal">
-                    <span class="section-badge">Find Us</span>
-                    <h2>Visit Our Centre</h2>
+                    <span class="section-badge" data-i18n="loc_badge">Find Us</span>
+                    <h2 data-i18n="loc_h2">Visit Our Centre</h2>
                     <div class="accent-line"></div>
                 </div>
                 <div class="location-wrapper reveal">
@@ -373,27 +374,27 @@
                         <img src="images/Newlogo.png" alt="JET Institute logo" class="logo-img">
                         JET Institute
                     </a>
-                    <p>Mongolia's official IELTS test centre. Trusted since 1995.</p>
+                    <pdata-i18n="footer_tagline">Mongolia's official IELTS test centre. Trusted since 1995.</p>
                 </div>
                 <div class="footer-column">
-                    <h4>Resources</h4>
+                    <h4 data-i18n="footer_resources">Resources</h4>
                     <ul>
-                        <li><a href="book-ielts.html">Book IELTS</a></li>
-                        <li><a href="about-test.html">About the Test</a></li>
-                        <li><a href="preparation.html">Preparation</a></li>
-                        <li><a href="https://ielts.org/legal/complaints-procedure" target="_blank" rel="noopener">Complaints</a></li>
+                        <li><a href="book-ielts.html" data-i18n="nav_book">Book IELTS</a></li>
+                        <li><a href="about-test.html" data-i18n="nav_test">About the Test</a></li>
+                        <li><a href="preparation.html" data-i18n="nav_prep">Preparation</a></li>
+                        <li><a href="https://ielts.org/legal/complaints-procedure" target="_blank" rel="noopener"data-i18n="footer_link_complaints">Complaints</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Company</h4>
+                    <h4 data-i18n="footer_company">Company</h4>
                     <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="about.html#contact">Contact</a></li>
+                        <li><a href="about.html" data-i18n="nav_about">About Us</a></li>
+                        <li><a href="about.html#contact" data-i18n="footer_link_contact">Contact</a></li>
                         <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <h4>Contact</h4>
+                    <h4 data-i18n="footer_contact_col">Contact</h4>
                     <ul>
                         <li>📞 (+976) 7711-8899 (2)</li>
                         <li>✉️ ielts@jet-english.mn</li>
@@ -402,7 +403,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 JET Institute. All rights reserved.</p>
+                <pdata-i18n="footer_copyright">&copy; 2026 JET Institute. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -410,6 +411,7 @@
     <!-- Back to Top -->
     <button class="back-to-top" aria-label="Back to top">↑</button>
 
+    <script src="js/translations.js"></script>
     <script src="js/main.js"></script>
     <script>
     (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="ytJWlCoYUFz3FrdeQ30_n";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
