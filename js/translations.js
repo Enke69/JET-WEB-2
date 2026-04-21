@@ -1,5 +1,13 @@
 window.i18n = {
   en: {
+    /* ---- Page titles ---- */
+    "title_": "JET Institute — Mongolia's Official IELTS Test Centre",
+    "title_index": "JET Institute — Mongolia's Official IELTS Test Centre",
+    "title_book-ielts": "Book IELTS — JET Institute",
+    "title_about-test": "About the Test — JET Institute",
+    "title_preparation": "IELTS Preparation — JET Institute",
+    "title_about": "About Us — JET Institute",
+
     /* ---- Shared nav ---- */
     nav_home: "Home",
     nav_book: "Book IELTS",
@@ -248,6 +256,14 @@ window.i18n = {
   },
 
   mn: {
+    /* ---- Page titles ---- */
+    "title_": "ЖЭТ Институт — Монголын Албан ёсны IELTS Шалгалтын Төв",
+    "title_index": "ЖЭТ Институт — Монголын Албан ёсны IELTS Шалгалтын Төв",
+    "title_book-ielts": "IELTS Бүртгүүлэх — ЖЭТ Институт",
+    "title_about-test": "Шалгалтын Тухай — ЖЭТ Институт",
+    "title_preparation": "IELTS Бэлтгэл — ЖЭТ Институт",
+    "title_about": "Бидний Тухай — ЖЭТ Институт",
+
     /* ---- Shared nav ---- */
     nav_home: "Нүүр",
     nav_book: "IELTS Бүртгүүлэх",

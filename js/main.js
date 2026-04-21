@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
       if (v !== undefined) el.innerHTML = v;
     });
 
+    // Update page title
+    const page = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
+    const titleKey = 'title_' + page;
+    if (t[titleKey]) document.title = t[titleKey];
+
     // Update toggle label
     if (langBtn) langBtn.textContent = lang === 'en' ? 'MN' : 'EN';
     document.documentElement.lang = lang === 'en' ? 'en' : 'mn';
