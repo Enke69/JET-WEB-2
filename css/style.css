@@ -581,7 +581,7 @@ p {
   position: relative;
   background: rgba(255, 255, 255, 0.78);
   overflow: hidden;
-  padding: 80px 0 60px;
+  padding: 50px 0 60px;
   min-height: 70vh;
   display: flex;
   align-items: center;
