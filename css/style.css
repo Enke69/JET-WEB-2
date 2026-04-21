@@ -2041,7 +2041,8 @@ p {
    BRITISH COUNCIL LOGO
    ============================================ */
 .hero-bc-logo {
-  margin-top: 28px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .hero-bc-logo img {
