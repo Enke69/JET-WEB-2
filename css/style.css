@@ -1945,19 +1945,28 @@ p {
     display: block;
   }
 
+  .hero-bc-mobile {
+    display: none;
+  }
+
+  .float-card-bc {
+    right: 12%;
+    top: 2%;
+  }
+
   .float-card-1 {
     right: 2%;
-    top: 12%;
+    top: 26%;
   }
 
   .float-card-2 {
     right: 0%;
-    top: 46%;
+    top: 54%;
   }
 
   .float-card-3 {
     right: 8%;
-    top: 76%;
+    top: 80%;
   }
 }
 
@@ -1990,15 +1999,20 @@ p {
     max-width: 650px;
   }
 
+  .float-card-bc {
+    right: 16%;
+    top: 2%;
+  }
+
   .float-card-1 {
     right: 5%;
-    top: 10%;
+    top: 24%;
     padding: 24px 28px;
   }
 
   .float-card-2 {
     right: 1%;
-    top: 44%;
+    top: 52%;
     padding: 24px 28px;
   }
 
@@ -2049,6 +2063,18 @@ p {
   height: 52px;
   width: auto;
   object-fit: contain;
+}
+
+.bc-float-img {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.float-card-bc {
+  animation: float 7.5s ease-in-out infinite;
+  animation-delay: -1.5s;
 }
 
 .page-hero-bc-logo {
