@@ -3,7 +3,25 @@
    Modern Black + Red + White Design System
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Mongolian:wght@400;700&display=swap');
+
+/* Mongolian font override */
+.lang-mn body,
+.lang-mn p,
+.lang-mn h1,
+.lang-mn h2,
+.lang-mn h3,
+.lang-mn h4,
+.lang-mn h5,
+.lang-mn h6,
+.lang-mn a,
+.lang-mn span,
+.lang-mn li,
+.lang-mn td,
+.lang-mn th,
+.lang-mn button {
+  font-family: 'Noto Sans Mongolian', sans-serif;
+}
 
 /* --- CSS Custom Properties --- */
 :root {

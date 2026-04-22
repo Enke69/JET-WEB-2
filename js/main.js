@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const titleKey = 'title_' + page;
     if (t[titleKey]) document.title = t[titleKey];
 
+    // Toggle Mongolian font class
+    document.documentElement.classList.toggle('lang-mn', lang === 'mn');
+
     // Update toggle label
     if (langBtn) langBtn.textContent = lang === 'en' ? 'MN' : 'EN';
     document.documentElement.lang = lang === 'en' ? 'en' : 'mn';
